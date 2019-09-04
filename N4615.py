@@ -52,8 +52,6 @@ for tc in range(T):
 
                         if (ni == N or ni == -1) or (nj == -1 or nj == N):
                             break
-                        # elif nj == N or nj == -1:
-                        #     break
 
                         if board[ni][nj] == 0:
                             break
