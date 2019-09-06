@@ -19,7 +19,7 @@ def f(r, c, direction):
                 nr = r + dr[k]
                 nc = c + dc[k]
                 if nr < N and nc < N: # 탐색한 곳이 범위 안이면
-                    if k == 0 and base[nr][nc] == 1: # k == 0이고 1이
+                    if k == 0 and base[nr][nc] == 1:
                         return
                     elif k == 2 and base[r + 1][c] == 1:
                         return
