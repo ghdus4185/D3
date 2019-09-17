@@ -17,6 +17,24 @@
 # p = [0] * k
 # npr(0, k, N)
 
+# def npr(n, k, N):
+#     if n == k:
+#         print(p)
+#     else:
+#         for i in range(N):
+#             if used[i] == 0:
+#                 used[i] = 1
+#                 p[n] = i+1
+#                 npr(n+1, k, N)
+#                 used[i] = 0
+# N = 5
+# k = 2
+# used = [0] * N
+# p = [0] * k
+# npr(0, k, N)
+
+
+
 def npr(n, k, N):
     if n == k:
         print(p)
@@ -28,12 +46,9 @@ def npr(n, k, N):
                 npr(n+1, k, N)
                 used[i] = 0
 
-
-N = 5
-k = 2
-used = [0] * N
-p = [0] * k
-npr(0, k, N)
+used = [0] * 3
+p = [0] * 2
+npr(0, 2, 3)
 
 # h = [1, 2, 3, 4, 5]
 # sub_list = []
