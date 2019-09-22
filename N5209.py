@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('input.txt', 'r')
-
 def npr(n, k, N, m):
     global res, minV
 
@@ -8,8 +5,7 @@ def npr(n, k, N, m):
         return
 
     if n == k:
-        if minV > m:
-            minV = m
+        minV = m
     else:
         for i in range(N):
             if used[i] == 0:
