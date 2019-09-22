@@ -1,6 +1,19 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
+
+def mine_check(x,y):
+    global di, dj, mine
+    check = 0
+    for k in range(8):
+        ni = x + di[k]
+        nj = y + dj[k]
+        # 탐색한 곳이 범위 안인지
+        if 0 <= ni < N and 0 <= nj < N:
+            # 만약 지뢰가 있다면 지뢰가 있다는 표시 res = 1
+            if mine[ni][nj] == '*':
+                check += 1
+    return check
 di = [-1, -1, 0, 1, 1, 1, 0, -1]
 dj = [0, 1, 1, 1, 0, -1, - 1, -1]
 T = int(input())
@@ -55,19 +68,43 @@ for tc in range(1, T+1):
     #                     board[nc][nr] = one
     q.sort()
     q.reverse()
+    click = 0
     while q:
         t = q.pop(0)
         x = t[1]
         y = t[2]
+        if mine[x][y] == '.':
         # x랑 y를 0으로 바꾸고
-    for a in range(N):
-        print(mine[a])
-    #
-    # for i in range(N):
-    #     for j in range(N):
-    #         if mine[i][j] == '.':
-    #             click += 1
-    # print('#{} {}'.format(tc, click))
+            # 만약에 0이면 밑으로 내려갈 필요가 없이 다시 위로 올라간다.
+            mine[x][y] = mine_check(x, y)  # x,y를 0으로 바꾸기
+            click += 1
+            # 8방향 탐색
+            for k in range(8):
+                ni = x + di[k]
+                nj = y + dj[k]
+                # 범위 안
+                if 0 <= ni < N and 0 <= nj < N:
+                    # '.'이고 주변에 지뢰가 없다면 그 좌표로 한번 더 반복
+                    sv = mine_check(ni,nj)
+                    if mine_check(ni, nj) == 0 and mine[ni][nj] == '.':
+                        mine[ni][nj] = 0 # 0 으로 바꾸고 그 좌표에서 다시 시작
+                        q = [[0, ni, nj]] + q # 그 좌표에서 다시 시작하기 위해서 q에 좌표를 넣어주고
+                        click -= 1
+                    else:
+                        mine[ni][nj] = sv
+
+# 안세도 되는걸 세고 있거나
+    # 효율적인 클릭을 못하고 있음
+
+    # for a in range(N):
+    #     print(mine[a])
+
+    dot = 0
+    for i in range(N):
+        for j in range(N):
+            if mine[i][j] == '.':
+                dot += 1
+    print('#{} {}'.format(tc, click+dot))
 # 각 칸에 대해 범위를 넘지 않는 8방향 탐색해서 지뢰가 없고
 # 가장 많은 칸을 인접하고 있는 순서대로 click을 한다.
 # 나는 숫자 0 으로 표시하고 8방향에 대해 또 8방향 탐색해서 지뢰 개수를 표시한다. count + 1
