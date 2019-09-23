@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d37b8a7c-6e26-4741-a824-431b1c632177" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/N5249.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/N5250.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/N5251.py" afterDir="false" />
@@ -9,8 +10,28 @@
       <change afterPath="$PROJECT_DIR$/dijkstra.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/prim.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/다익스트라.py" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/1번.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2번.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3번.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4번.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5번.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6번.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/N123.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/시험테스트.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/D3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/D3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/N1868.py" beforeDir="false" afterPath="$PROJECT_DIR$/N1868.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/N5247.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/그래프.py" afterDir="false" />
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +39,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="FUSProjectUsageTrigger">
     <session id="1419905362">
       <usages-collector id="statistics.lifecycle.project">
@@ -98,6 +121,7 @@
       </file>
     </leaf>
   </component>
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -117,6 +141,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="ProjectId" id="1QSdTW78owxYEFDM2VC6mhOkaZj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -202,6 +232,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,8 +246,18 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.dijkstra">
     <configuration name="다익스트라" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="Python.1번">
+    <configuration name="시험테스트" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+  <component name="RunManager" selected="Python.N5247">
+    <configuration name="조합" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <module name="D3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,7 +269,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/다익스트라.py" />
+=======
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/시험테스트.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/조합.py" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,7 +286,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="N5249" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+<<<<<<< HEAD
+    <configuration name="1번" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="그래프" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <module name="D3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -249,6 +306,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/N5249.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -271,27 +329,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/N5251.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="그래프" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="D3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+=======
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1번.py" />
+=======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/그래프.py" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,7 +344,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
+    <configuration name="그래프" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+<<<<<<< HEAD
+    <configuration name="3번" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="DFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
+      <module name="D3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/그래프.py" />
+=======
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3번.py" />
+=======
+      <option name="SCRIPT_NAME" value="C:\Users\student\PycharmProjects\D3\그래프.py" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+<<<<<<< HEAD
     <configuration name="class3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+<<<<<<< HEAD
+    <configuration name="4번" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="N2806" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <module name="D3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -312,7 +401,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/class3.py" />
+=======
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4번.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/N2806.py" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,7 +418,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="dijkstra" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+<<<<<<< HEAD
+    <configuration name="5번" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="N5247" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <module name="D3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -333,7 +438,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dijkstra.py" />
+=======
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5번.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/N5247.py" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,6 +456,7 @@
       <method v="2" />
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Python.class3" />
       <item itemvalue="Python.N5249" />
       <item itemvalue="Python.다익스트라" />
@@ -356,6 +470,37 @@
         <item itemvalue="Python.다익스트라" />
         <item itemvalue="Python.class3" />
         <item itemvalue="Python.N5249" />
+=======
+<<<<<<< HEAD
+      <item itemvalue="Python.1번" />
+      <item itemvalue="Python.시험테스트" />
+      <item itemvalue="Python.3번" />
+      <item itemvalue="Python.4번" />
+      <item itemvalue="Python.5번" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.1번" />
+        <item itemvalue="Python.5번" />
+        <item itemvalue="Python.4번" />
+        <item itemvalue="Python.3번" />
+        <item itemvalue="Python.시험테스트" />
+=======
+      <item itemvalue="Python.N2806" />
+      <item itemvalue="Python.조합" />
+      <item itemvalue="Python.DFS" />
+      <item itemvalue="Python.그래프" />
+      <item itemvalue="Python.N5247" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.N5247" />
+        <item itemvalue="Python.그래프" />
+        <item itemvalue="Python.DFS" />
+        <item itemvalue="Python.조합" />
+        <item itemvalue="Python.N2806" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
       </list>
     </recent_temporary>
   </component>
@@ -372,6 +517,20 @@
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
@@ -396,6 +555,7 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,15 +657,45 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/N1868.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/N1868.py</url>
-          <line>12</line>
+          <line>44</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+<<<<<<< HEAD
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/3번.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/3번.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4번.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4번.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/1번.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/1번.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="86" />
+=======
           <url>file://$PROJECT_DIR$/트리.py</url>
           <line>45</line>
           <option name="timeStamp" value="82" />
@@ -594,6 +784,7 @@
           <url>file://$PROJECT_DIR$/N5247.py</url>
           <line>29</line>
           <option name="timeStamp" value="123" />
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/다익스트라.py</url>
@@ -616,6 +807,11 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
+<<<<<<< HEAD
+        <watch expression="mine" />
+      </configuration>
+    </watches-manager>
+=======
         <watch expression="c" language="Python" />
       </configuration>
     </watches-manager>
@@ -924,6 +1120,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/N5250.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -980,5 +1177,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> fa6ef96b865b0ff190f7647231af6a9a092a179b
+>>>>>>> bcc506aeeea480841b0fd8195b5859c152920fe7
   </component>
 </project>

@@ -14,24 +14,6 @@ def mine_check(x,y):
             if mine[ni][nj] == '*':
                 check += 1
     return check
-
-def change(i, j):
-    global di, dj, mine
-    stack = [[i, j]]
-    mine[i][j] = 0  # 누른 곳 바꾸기
-    while stack != []:
-        col, row = stack.pop()
-        for k in range(8):
-            nc = col + di[k]
-            nr = row + dj[k]
-            if 0 <= nc < N and 0 <= nr < N:
-                one = mine_check(nc, nr)
-                if one == 0 and mine[nc][nr] == '.':
-                    mine[nc][nr] = 0
-                    stack.append([nc, nr])
-                else:
-                    mine[nc][nr] = one
-
 di = [-1, -1, 0, 1, 1, 1, 0, -1]
 dj = [0, 1, 1, 1, 0, -1, - 1, -1]
 T = int(input())
@@ -62,6 +44,28 @@ for tc in range(1, T+1):
                 # 8방향에 지뢰가 없다면
                 if res == 0:
                     q.append([std, i, j])
+
+
+    # def change(i, j):
+    #     global board
+    #     global N
+    #     dc = [0, 1, 0, -1, 1, 1, -1, -1]
+    #     dr = [1, 0, -1, 0, 1, -1, 1, -1]
+    #     stack = [[i, j]]
+    #     board[i][j] = 0  # 누른 곳 바꾸기
+    #     while stack != []:
+    #         # print(stack)
+    #         col, row = stack.pop()
+    #         for k in range(8):
+    #             nc = col + dc[k]
+    #             nr = row + dr[k]
+    #             if 0 <= nc < N and 0 <= nr < N:
+    #                 one = check(nc, nr)
+    #                 if one == 0 and board[nc][nr] == '.':
+    #                     board[nc][nr] = 0
+    #                     stack.append([nc, nr])
+    #                 else:
+    #                     board[nc][nr] = one
     q.sort()
     q.reverse()
     click = 0
@@ -71,7 +75,8 @@ for tc in range(1, T+1):
         y = t[2]
         if mine[x][y] == '.':
         # x랑 y를 0으로 바꾸고
-            mine[x][y] = 0 # x,y를 0으로 바꾸기
+            # 만약에 0이면 밑으로 내려갈 필요가 없이 다시 위로 올라간다.
+            mine[x][y] = mine_check(x, y)  # x,y를 0으로 바꾸기
             click += 1
             # 8방향 탐색
             for k in range(8):
@@ -82,21 +87,24 @@ for tc in range(1, T+1):
                     # '.'이고 주변에 지뢰가 없다면 그 좌표로 한번 더 반복
                     sv = mine_check(ni,nj)
                     if mine_check(ni, nj) == 0 and mine[ni][nj] == '.':
-                        change(ni,nj)
-                        # mine[ni][nj] = 0
-                        # click -= 1
-                        # q = [[0, ni, nj]] + q
+                        mine[ni][nj] = 0 # 0 으로 바꾸고 그 좌표에서 다시 시작
+                        q = [[0, ni, nj]] + q # 그 좌표에서 다시 시작하기 위해서 q에 좌표를 넣어주고
+                        click -= 1
                     else:
                         mine[ni][nj] = sv
 
-    for a in range(N):
-        print(mine[a])
+# 안세도 되는걸 세고 있거나
+    # 효율적인 클릭을 못하고 있음
 
+    # for a in range(N):
+    #     print(mine[a])
+
+    dot = 0
     for i in range(N):
         for j in range(N):
             if mine[i][j] == '.':
-                click += 1
-    print('#{} {}'.format(tc, click))
+                dot += 1
+    print('#{} {}'.format(tc, click+dot))
 # 각 칸에 대해 범위를 넘지 않는 8방향 탐색해서 지뢰가 없고
 # 가장 많은 칸을 인접하고 있는 순서대로 click을 한다.
 # 나는 숫자 0 으로 표시하고 8방향에 대해 또 8방향 탐색해서 지뢰 개수를 표시한다. count + 1
