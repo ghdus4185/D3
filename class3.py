@@ -23,6 +23,7 @@ cnt = 0
 for i in range(1, V+1):
     if p[i] == i:
         cnt += 1
+
 #같은 트리에 속하는지
 r = 1 if rep(p[v1]) == rep(p[v2]) else 0
 print(cnt, r)
