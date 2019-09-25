@@ -1,34 +1,25 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
+def find(n, k, c):
+    global maxV, minV
+    if c == 0 or n == k:
+        s = 0
+        for i in range(k):
+            s = s*10 + int(card[i])
+        if maxV <= 0:
+            maxV = s
+            if minV > c:
+                minV = c
+    else:
+        lst = list(str(card))
+        for i in range(k):
+            card[n], card[i] = card[i], card[n]
+            cnt 1 if n != i else 0
+            find(n+1, k, c-cnt)
+            card[n], card[i] = card[i], card[n]
+
+
 T = int(input())
 for tc in range(1, T+1):
     a, b = input().split()
-
-    a = ' '.join(a)
-    a = list(map(int, a.split()))
-
-    x = sorted(a)
-
-    n = 0
-    c = 0
-    while n != int(b) or  n != len(a)//2:
-        idx = 0
-        for i in a:
-            if x[-(n+1)] != i:
-                if int(b) > len(a):
-                    a[-int(b)+len(a)+n] = i
-                    a[idx] = x[-(n+1)]
-                    n += 1
-                    break
-                else:
-                    a[-int(b)+n] = i
-                    a[idx] = x[-(n+1)]
-                    n += 1
-                    break
-            idx += 1
-    if n != int(b):
-        if int(b)-n % 2 == 1:
-            a[-1], a[-2] = a[-2], a[-1]
-    
-    print(a, n)

@@ -1,23 +1,33 @@
-def stack(n, s):
-    if n == N:
-        return minV
+import sys
+sys.stdin = open('input.txt', 'r')
 
-# 첫번째열에서 하나
-# 두번째열에서 하나
-# 세번째 열에서 하나 뽑아서 더함
+def find(n, s):
+    global minV
+    if s >= minV:
+        return
+
+    if n == N:
+        if s < minV:
+            minV = s
+        return
+
+    else:
+        for i in range(N):
+            if col[i] == 0:
+                col[i] = 1
+                find(n+1, s+num[n][i])
+                col[i] = 0
 
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
-    num = list(map(int, input()))
+    num = [list(map(int, input().split())) for _ in range(N)]
+
     minV = 1000000000
     s = 0
-    stack = []
-    for i in range(N):
-        for j in range(N):
-            for k in range(N):
-                s += num[i][j]
-    if minV > s:
-        minV = s
+    col = [0] * N
+    minV = 10000
+
+    find(0,s)
 
     print('#{} {}'.format(tc, minV))
