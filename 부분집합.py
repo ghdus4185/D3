@@ -40,3 +40,4 @@ for i in range(1, 1<<N):
 for i in range(len(c)):
     print(c[i])
 print(len(c))
+

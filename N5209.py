@@ -1,3 +1,6 @@
+import sys
+sys.stdin = open('input.txt', 'r')
+
 def npr(n, k, N, m):
     global res, minV
 
