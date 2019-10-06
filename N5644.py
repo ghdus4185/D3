@@ -14,6 +14,7 @@ for tc in range(1, T+1):
     start_b = [10, 10]
     pa, pb = [], []
     temp = []
+    d = [[0, 0], [0, -1], [1, 0], [0, 1], [-1, 0]]
     # 시작점에서 충전가능한 충전소를 저장
     for j in range(A):
         if abs(start_a[0] - ap[j][0]) + abs(start_a[1] - ap[j][1]) <= ap[j][2]:
