@@ -9,19 +9,12 @@ def npr(n, k, N):
                 p[n] = i + 1
                 npr(n + 1, k, N)
                 used[i] = 0
-<<<<<<< HEAD
-a = ['+', '+', '-', '/']
-used = [0] * 3
-p = [0] * 3
-npr(0, 3, 3)
-=======
 
 N = 5
 used = [0] * N
 k = 2
 p = [0] * k
 npr(0, k, N)
->>>>>>> 4ee2d411400f7fd5d8fe2c48e2315d94543ab0fa
 
 # h = [1, 2, 3, 4, 5]
 # sub_list = []
