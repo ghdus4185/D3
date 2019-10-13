@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open('sample_input.txt', 'r')
-
 op = ['+', '-', '*', '/']
 def f(n, last):
     if tree[n] in op:
