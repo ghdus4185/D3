@@ -1,51 +1,62 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
-def row(r):
+def f(r):
     global way
-    # 앞에서부터 연결되어있는지 확인하다가
-    # 연결이 안되어있는점이 나오면 다리를 놓아서 연결이 가능한지 확인
-    # 다리를 놓은점은 CHECK로 확인
-    check = [0] * N
-    linked = [0] * (N-1)
-    possible = 0
-    for i in range(N-1):
-        if r[i] == r[i+1]:
-            linked[i] = 1
-        else: # 다리를 놓아서 연결이 가능한지 확인
-            if r[i] - r[i + 1] == 1:
-                pass
-            for j in range(1, X+1):
-                if 0 <= i+j <= N-1:
-                    if r[i+1] == r[i+j]:
-                        pass
+    cnt = 1
+    i = 0
+    p = 0
+    while i < N-1:
+        if r[i] - r[i+1] == 0 or r[i] - r[i+1] == -1 or r[i] - r[i+1] == 1:
+            if r[i] - r[i+1] == -1:
+                if cnt >= X:
+                    cnt = 0
                 else:
-                    return
-            else:
-                possible = 1
-
-            if possible == 1:
-                linked[i] =1
-                pass
-            else:
-                return
-    way += 1
-def col(c):
-    global way
-    pass
+                    break
+            elif r[i] - r[i+1] == 1:
+                cnt = 1
+                j = 1
+                while i+1+j < N:
+                    if r[i+1] == r[i+1+j]:
+                        cnt += 1
+                    else:
+                        break
+                    j += 1
+                if cnt >= X:
+                    cnt = -1
+                    i += (X-1)
+                else:
+                    break
+        else:
+            break
+        cnt += 1
+        i += 1
+    else:
+        way += 1
+        p = 1
+    rr = r[::-1]
+    dp.append(dict(r=p))
+    dp.append(dict(rr=p))
 
 T = int(input())
 for tc in range(1, T+1):
-    N, X = map(int, input().split()) # N*N행렬, X 경사로 길이
+    N, X = map(int, input().split())
     land = [list(map(int, input().split())) for _ in range(N)]
     way = 0
-    # 가로 한 줄 활주로 건설할 수 있는지 확인
+    dp = []
+    # 가로 한 줄 확인
     for i in range(N):
-        row(land[i])
+        if land[i] in dp:
+            way += dp[land[i]]
+        else:
+            f(land[i])
     # 세로 한 줄
     for i in range(N):
         column = []
         for j in range(N):
             column += [land[j][i]]
-        col(column)
-    print(way)
+        if column in dp:
+            way += dp[column]
+        else:
+            f(column)
+    print('#{} {}'.format(tc, way))
