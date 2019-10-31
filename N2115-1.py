@@ -17,5 +17,6 @@ for i in range(1, 2 ** M):  # 이진수 생성
     if maxV < ss:
         maxV = ss
 
-return maxV # 결국 부분집합 합의 최대 값을 구하는 것
+print(maxV)
+# 결국 부분집합 합의 최대 값을 구하는 것
 #첫째줄을 한사람이 고르고 두번째 사람은 그 아후줄에서 구함
