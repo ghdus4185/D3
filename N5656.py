@@ -8,6 +8,7 @@ def ndpr(n, k, N):
         return
 
     if n == k:
+        fake = [0]
         fake = [brick[_][:] for _ in range(H)]
         q = []
         for i in range(k):
