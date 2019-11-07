@@ -14,6 +14,7 @@ for tc in range(1, T+1):
         for j in range(N):
             used[i] = 1
             res = (P[j][i]/100)
+            print(res)
             for k in range(N):
                 if used[k] == 0:
                     used[k] = 1

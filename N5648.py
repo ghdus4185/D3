@@ -1,48 +1,31 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
-
 T = int(input())
 d = [[-1, 0], [1, 0], [0, -1], [0, 1]]
 for tc in range(1, T+1):
     N = int(input())
-    arr = [[0]*2001 for _ in range(2001)]
-    for i in range(N):
-        y, x, dir, e = map(int, input().split())
-        arr[x+1000][y+1000] = [dir, e]
-
-
-
-    # 0이 아닌걸 찾으면 그 원자가 가지고 있는 방향으로 움직인다.
-    # 만약 움직이는 자리가 0이 아니면 충돌해서 사라지게 만들고
-    # 두 에너지의 합을 res에 더한다
-    res = 0
+    atoms = [list(map(int, input().split())) for _ in range(N)] # y, x, dir, e
+    # 1초 마다 가지고 있는 방향으로 움직인다.
+    # 다 움직이고 만약에 같은 위치가 있는것들은 pop하면서 에너지를 res에 더한다.
     cnt = 0
-    memory = []
+    res = 0
     while cnt < 2000:
-        for i in range(2000):
-            for j in range(2000):
-                if arr[i][j] != 0:
-                    ni = i + d[arr[i][j][0]][0]
-                    nj = j + d[arr[i][j][0]][1]
-                    if 0 <= ni < 2000 and 0 <= nj < 2000:
-                        if arr[ni][nj] == 0:
-                            arr[ni][nj] = arr[i][j]
-                            arr[i][j] = 0
-                        else:
-                            if [ni, nj] in memory:
-                                res += arr[i][j][1] # 부딪히는 모든 원자값을 res에 넣는다.
-                                res += arr[i][j][1]
-                                memory.append([i, j])
-                                arr[i][j] = 0
-                                arr[i][j] = 0
-                            else:
-                                memory.append([i, j])
-                                arr[ni][nj] = arr[i][j]
-                                arr[i][j] = 0
-                    else:
-                        arr[i][j] = 0
+        for atom in atoms:
+            atom[0] += d[atom[2]][0]
+            atom[1] += d[atom[2]][1]
         memory = []
+        for atom in atoms:
+            check = 0
+            for at in atoms:
+                if atom != at:
+                    if atom[0] == at[0] and atom[1] == at[1]:
+                        res += at[3]
+                        atoms.pop(atoms.index(at))
+                        check = 1
+            if check == 1:
+                res += atom[3]
+                atoms.pop(atoms.index(atom))
         cnt += 1
     # x, y, 방향, 에너지
     # 0상, 1하, 2좌, 3우
