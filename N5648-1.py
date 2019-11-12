@@ -13,51 +13,56 @@ for tc in range(1, T+1):
     # xi-yi == xj-yj길이가 같은것
     N = len(atoms)
     li = []
-    for i in range(N):
-        for j in range(N):
-            if i != j:
-                if atoms[i][2] == 0: # 방향이 상일때
-                    if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
-                        if atoms[j][2] == 1: # 방향이 반대일때
-                            li.append(atoms[i][0] - atoms[j][0])
-                        elif atoms[j][2] == 2:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
-                        elif atoms[j][2] == 3:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
+    while 1:
+        for i in range(N):
+            for j in range(N):
+                if i != j:
+                    if atoms[i][2] == 0: # 방향이 상일때
+                        if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
+                            if atoms[j][2] == 1: # 방향이 반대일때
+                                li.append(atoms[i][0] - atoms[j][0])
+                            elif atoms[j][2] == 2:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
+                            elif atoms[j][2] == 3:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
 
-                elif atoms[i][2] == 1: # 방향이 하일때
-                    if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
-                        if atoms[j][2] == 0: # 방향이 반대일때
-                            li.append(atoms[i][0] - atoms[j][0])
-                        elif atoms[j][2] == 2:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
-                        elif atoms[j][2] == 3:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
+                    elif atoms[i][2] == 1: # 방향이 하일때
+                        if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
+                            if atoms[j][2] == 0: # 방향이 반대일때
+                                li.append(atoms[i][0] - atoms[j][0])
+                            elif atoms[j][2] == 2:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
+                            elif atoms[j][2] == 3:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
 
-                elif atoms[i][2] == 2: # 방향이 좌일때
-                    if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
-                        if atoms[j][2] == 3: # 방향이 반대일때
-                            li.append(atoms[i][0] - atoms[j][0])
-                        elif atoms[j][2] == 1:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
-                        elif atoms[j][2] == 2:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
+                    elif atoms[i][2] == 2: # 방향이 좌일때
+                        if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
+                            if atoms[j][2] == 3: # 방향이 반대일때
+                                li.append(atoms[i][0] - atoms[j][0])
+                            elif atoms[j][2] == 1:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
+                            elif atoms[j][2] == 2:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
 
-                elif atoms[i][2] == 3: # 방향이 우일때
-                    if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
-                        if atoms[j][2] == 2: # 방향이 반대일때
-                            li.append(atoms[i][0] - atoms[j][0])
-                        elif atoms[j][2] == 1:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
-                        elif atoms[j][2] == 0:
-                            if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
-                                li.append(abs(atoms[i][0] - atoms[j][0]))
-    print(li)
+                    elif atoms[i][2] == 3: # 방향이 우일때
+                        if atoms[i][0] > atoms[j][0]: # 나보다 i가 작으면
+                            if atoms[j][2] == 2: # 방향이 반대일때
+                                li.append(atoms[i][0] - atoms[j][0])
+                            elif atoms[j][2] == 1:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
+                            elif atoms[j][2] == 0:
+                                if abs(atoms[i][0] - atoms[j][0]) == abs(atoms[i][1] - atoms[j][1]):
+                                    li.append(abs(atoms[i][0] - atoms[j][0]))
+    if li != []:
+        print(sorted(li))
+        atoms.pop()
+    else:
+        break
     print('#{} {}'.format(tc, res))

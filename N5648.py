@@ -6,7 +6,6 @@ d = [[1, 0], [-1, 0], [0, -1], [0, 1]]
 for tc in range(1, T+1):
     N = int(input())
     atoms = [list(map(int, input().split())) for _ in range(N)]
-    cnt = 0
     res = 0
     while 1:
         # 이동
@@ -37,5 +36,4 @@ for tc in range(1, T+1):
                 atoms.pop(i)
         if atoms == []:
             break
-        cnt += 1
     print('#{} {}'.format(tc, res))
