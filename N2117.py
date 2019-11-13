@@ -33,7 +33,7 @@ cost = [1, 5, 13, 25]
 for i in range(22):
     cost.append(cost[-1]+len(cost)*4)
 
-d= [[1,0], [-1,0], [0,-1], [0,1]]
+d= [[1, 0], [-1, 0], [0, -1], [0, 1]]
 
 T = int(input())
 for tc in range(1, T+1):
