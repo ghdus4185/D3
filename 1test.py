@@ -1,17 +1,10 @@
-# 조합 앞에서부터
-def f(n, k, cnt, arr):
-    if cnt < k:
-        print(arr[:])
-    if cnt == k:
-        return
-
-    if n >= N:
-        return
-
-    f(n+1, k, cnt+1, arr+[nums[n]])
-    f(n+1, k, cnt, arr)
-
-
-nums = list(range(10))
-N = 10
-f(0, 3, 0, [])
+arr = [3, 5, 4, 1, 8, 10, 2]
+def f(arr):
+    global maxV
+    for num in arr:
+        if num > maxV:
+            maxV = num
+    return maxV
+maxV = 0
+x = f(arr)
+print('max(3, 5, 4, 1, 8, 10, 2) => {}'.format(x))
