@@ -1,24 +1,6 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
-def f(x, y, check):
-    global arr, p, visited
-    stack = [[x, y]]
-    while stack:
-        i, j = stack.pop()
-        for k in range(4):
-            ni = i + d[k][0]
-            nj = j + d[k][1]
-            if 0 <= ni < 100 and 0 <= nj < 100:
-                # 0이고 방문안했으면 그 점에서 다시 탐색
-                if arr[ni][nj] == 3:
-                    p = 1
-                    return
-                if arr[ni][nj] == 0 and check[ni][nj] == 0:
-                    check[i][j] = 1
-                    f(ni, nj, check)
-                    check[i][j] = 0
-    return
 
 d = [[-1, 0], [1, 0], [0, -1], [0, 1]]
 for tcc in range(1, 11):
@@ -31,8 +13,21 @@ for tcc in range(1, 11):
                 si, sj = i, j
             elif arr[i][j] == 3:
                 li, lj = i, j
-    p = 0
+
     visited = [[0] * 100 for _ in range(100)]
-    f(si, sj, visited)
+    p = 0
+    stack = [[si, sj]]
+    while stack:
+        x, y = stack.pop()
+        for k in range(4):
+            ni = x + d[k][0]
+            nj = y + d[k][1]
+            if 0 <= ni < 100 and 0 <= nj < 100:
+                if arr[ni][nj] == 3:
+                    p = 1
+                    break
+                elif arr[ni][nj] == 0 and visited[ni][nj] == 0:
+                    visited[ni][nj] = 1
+                    stack.append([ni, nj])
 
     print('#{} {}'.format(tc, p))
